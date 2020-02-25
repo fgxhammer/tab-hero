@@ -1,1 +1,11 @@
-@import '~bulma/bulma'
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins');
+
+$family-primary: 'Lato';
+
+
+
+.header-font {
+    font-family: 'Poppins';
+}
+
+@import '~bulma/bulma';

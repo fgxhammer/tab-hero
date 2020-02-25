@@ -1,11 +1,17 @@
 <template>
   <div id="app">
+    <navbar/>
     <router-view />
   </div>
 </template>
 <script>
-import './assets/main.scss'
-export default {}
+import Navbar from '@/components/Navbar'
+export default {
+  components: {
+    Navbar
+  }
+}
 </script>
-<style>
+<style lang='scss'>
+@import './assets/main.scss';
 </style>
