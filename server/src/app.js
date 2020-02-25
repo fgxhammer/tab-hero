@@ -2,11 +2,16 @@ const dotenv = require('dotenv')
 const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
+const db = require('./db')
 
 // init environment variables from .env file
 dotenv.config()
 const PORT = process.env.PORT
 const CROSS_ORIGIN = process.env.CROSS_ORIGIN
+const DB_CONNECTION = process.env.DB_CONNECTION
+
+// init Mongo DB
+db(DB_CONNECTION)
 
 const app = express()
 
